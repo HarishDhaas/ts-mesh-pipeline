@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv  
 
-class Webscraper:
+class web_scraper:
     def __init__(self, url):
         self.url = url
         self.data = [] 
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     =All&field_sub_category=All&content_type_1=&field_organization_tags=All&type_2_op=not&type_
     2%5B%5D=homepage_spotlight_feature&sort_by=search_api_relevance&sort_order=DESC'''
     
-    scraper = Webscraper(url)
+    scraper = web_scraper(url)
     scraper.scrape()
     
     csv_filename = 'tender_data.csv'
